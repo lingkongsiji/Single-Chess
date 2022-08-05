@@ -1,0 +1,34 @@
+#board {
+  width: 375px;
+  height: 375px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-gap: 1px;
+
+  .square {
+    border: 1px solid #999;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    background-color: #eee;
+    cursor: pointer;
+
+    .pieces {
+      width: 80%;
+      height: 80%;
+      border-radius: 50%;
+      box-shadow: 0 0 10px 1px #999, inset 0 0 10px 1px #999;
+      background-color: #fff;
+    }
+    .blank{
+        width: 80%;
+        height: 80%;
+    }
+  }
+}
